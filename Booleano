@@ -1,0 +1,24 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Digite a sua idade:");
+        if (int.TryParse(Console.ReadLine(), out int idade))
+        {
+            if (idade >= 18)
+            {
+                Console.WriteLine("Você é maior de idade.");
+            }
+            else
+            {
+                Console.WriteLine("Você é menor de idade.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Idade inválida. Por favor, digite um número inteiro válido.");
+        }
+    }
+}
